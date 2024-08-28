@@ -8,14 +8,11 @@ const About = () => {
   }, []);
 
   return (
-    <section
-      className="bg-black text-white py-12 px-4"
-      data-aos="fade-up" // Add AOS animation here
-    >
+    <section className="text-white py-12 px-4" data-aos="fade-up">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-5xl font-bold text-blue-300">About</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-blue-300">About</h2>
         <div className="mt-4 border-t-2 border-blue-300 w-20 mx-auto"></div>
-        <p className="mt-6 text-lg leading-7 max-w-2xl mx-auto">
+        <p className="mt-6 text-lg md:text-xl leading-7 max-w-2xl mx-auto">
           In this part of my website, I’m excited to share what I’ve been
           learning and working on. I specialize in Front-End Development with
           React, which means I create the parts of websites and apps that people
@@ -29,36 +26,86 @@ const About = () => {
       </div>
 
       <div
-        className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-16 max-w-4xl mx-auto"
-        data-aos="fade-up" // Add AOS animation here
-        data-aos-delay="200" // Optional delay for staggered effect
+        className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 max-w-4xl mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
         <div className="text-center">
           <img
             src="https://cdn3d.iconscout.com/3d/free/thumb/free-react-3d-icon-download-in-png-blend-fbx-gltf-file-formats--facebook-logo-native-javascript-library-user-interfaces-coding-lang-pack-logos-icons-7578010.png"
             alt="react"
-          ></img>
-          <h3 className="text-2xl font-bold">Front-End</h3>
-          <p className="mt-2 text-gray-400">60+ Hours Experience</p>
-          <div className="mt-4 border-t-2 border-blue-300 w-60 mx-auto"></div>
+            className="mx-auto h-16 md:h-20"
+          />
+          <h3 className="text-xl md:text-2xl font-bold">Front-End</h3>
+          <p className="mt-2 text-gray-400 text-sm md:text-base">
+            60+ Hours Experience
+          </p>
+          <div className="mt-4 border-t-2 border-blue-300 w-40 md:w-60 mx-auto"></div>
         </div>
+
         <div className="text-center">
           <img
             src="https://cdn.worldvectorlogo.com/logos/spring-3.svg"
             alt="spring"
+            className="mx-auto h-16 md:h-20"
           />
-          <h3 className="text-2xl font-bold">spring</h3>
-          <p className="mt-2 text-gray-400">80+ Hours Experience</p>
-          <div className="mt-4 border-t-2 border-blue-300 w-60 mx-auto"></div>
+          <h3 className="text-xl md:text-2xl font-bold">Spring</h3>
+          <p className="mt-2 text-gray-400 text-sm md:text-base">
+            80+ Hours Experience
+          </p>
+          <div className="mt-4 border-t-2 border-blue-300 w-40 md:w-60 mx-auto"></div>
         </div>
+
         <div className="text-center">
           <img
             src="https://cdn3d.iconscout.com/3d/free/thumb/free-flutter-3d-icon-download-in-png-blend-fbx-gltf-file-formats--android-logo-google-dart-coding-lang-pack-logos-icons-7577998.png?f=webp"
             alt="flutter"
-          ></img>
-          <h3 className="text-2xl font-bold">Flutter</h3>
-          <p className="mt-2 text-gray-400">120+ Hours Experience</p>
-          <div className="mt-4 border-t-2 border-blue-300 w-60 mx-auto"></div>
+            className="mx-auto h-16 md:h-20"
+          />
+          <h3 className="text-xl md:text-2xl font-bold">Flutter</h3>
+          <p className="mt-2 text-gray-400 text-sm md:text-base">
+            120+ Hours Experience
+          </p>
+          <div className="mt-4 border-t-2 border-blue-300 w-40 md:w-60 mx-auto"></div>
+        </div>
+
+        <div className="text-center">
+          <img
+            src="https://cdn3d.iconscout.com/3d/free/thumb/free-figma-3d-icon-download-in-png-blend-fbx-gltf-file-formats--logo-design-soft-tool-pack-logos-icons-7516877.png?f=webp"
+            alt="figma"
+            className="mx-auto h-16 md:h-20"
+          />
+          <h3 className="text-xl md:text-2xl font-bold">UX/UI</h3>
+          <p className="mt-2 text-gray-400 text-sm md:text-base">
+            120+ Hours Experience
+          </p>
+          <div className="mt-4 border-t-2 border-blue-300 w-40 md:w-60 mx-auto"></div>
+        </div>
+
+        <div className="text-center">
+          <img
+            src="https://cdn3d.iconscout.com/3d/free/thumb/free-github-3d-icon-download-in-png-blend-fbx-gltf-file-formats--logo-social-media-brand-ball-pack-logos-icons-5639649.png?f=webp"
+            alt="github"
+            className="mx-auto h-16 md:h-20"
+          />
+          <h3 className="text-xl md:text-2xl font-bold">Git</h3>
+          <p className="mt-2 text-gray-400 text-sm md:text-base">
+            120+ Hours Experience
+          </p>
+          <div className="mt-4 border-t-2 border-blue-300 w-40 md:w-60 mx-auto"></div>
+        </div>
+
+        <div className="text-center">
+          <img
+            src="https://cdn3d.iconscout.com/3d/free/thumb/free-docker-5645891-4695749.png?f=webp"
+            alt="docker"
+            className="mx-auto h-16 md:h-20"
+          />
+          <h3 className="text-xl md:text-2xl font-bold">Docker</h3>
+          <p className="mt-2 text-gray-400 text-sm md:text-base">
+            80+ Hours Experience
+          </p>
+          <div className="mt-4 border-t-2 border-blue-300 w-40 md:w-60 mx-auto"></div>
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@ export default {
         "1/2-sm": "350px",
       },
       colors: {
-        primary: "#221F1F",
+        primary: "#000000",
         fontprimary: "#A6BBCC",
       },
       fontFamily: {
