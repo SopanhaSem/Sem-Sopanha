@@ -1,0 +1,10 @@
+/* General Container Styles */
+#root {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+  text-align: left; /* Align text to the left for better readability */
+}
+body {
+  background-color: black;
+}
