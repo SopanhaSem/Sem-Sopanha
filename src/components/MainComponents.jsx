@@ -8,19 +8,19 @@ import ParticlesComponent from "../components/ParticleComponents";
 const MainComponents = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
+      <header className="w-full sticky top-0 left-0 z-30">
+        <NavbarComponents />
+      </header>
       <ParticlesComponent
         id="main-tsparticles"
         className="absolute inset-0 -z-10"
       />
 
       <div className="relative flex flex-col min-h-screen">
-        <header className="w-full sticky top-0 left-0 z-20">
-          <NavbarComponents />
-        </header>
         <main className="flex-grow z-10">
           <Outlet />
         </main>
-        <Footer className="mt-auto z-10">
+        <Footer className="mt-auto z-20">
           <FooterComponents />
         </Footer>
       </div>

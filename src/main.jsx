@@ -7,6 +7,8 @@ import MainComponents from "./components/MainComponents.jsx";
 import About from "./pages/About.jsx";
 import Education from "./pages/Education.jsx";
 import Home from "./pages/Home.jsx";
+import BlogSection from "./components/BlogSection.jsx";
+import BlogsDetail from "./components/BlogsDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,8 +20,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
-        element: <About />,
+        path: "/blogs",
+        element: <BlogSection />,
+      },
+      {
+        path: "/blogs/:id",
+        element: <BlogsDetail />,
       },
       {
         path: "/education",

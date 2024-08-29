@@ -1,6 +1,7 @@
 import { Navbar, Dropdown } from "flowbite-react";
 import React, { useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 
 const NavbarComponents = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ const NavbarComponents = () => {
   };
 
   return (
-    <Navbar className="w-full p-3 bg-primary border-gray-200 dark:bg-gray-900">
+    <Navbar className="w-full p-3  bg-primary border-gray-200 dark:bg-gray-900">
       <div className="w-full flex items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-900 text-white">
@@ -19,25 +20,36 @@ const NavbarComponents = () => {
         </a>
 
         <div className="hidden md:flex flex-grow justify-center space-x-8">
-          <a
-            href="#"
-            className="text-xl block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500"
-            aria-current="page"
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-xl block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-600 md:p-0 md:dark:text-blue-500"
+                : "text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            }
           >
             Home
-          </a>
-          <a
-            href="#"
-            className="text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          </NavLink>
+          <NavLink
+            to="/blogs"
+            className={({ isActive }) =>
+              isActive
+                ? "text-xl block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-600 md:p-0 md:dark:text-blue-500"
+                : "text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            }
           >
-            About
-          </a>
-          <a
-            href="#"
-            className="text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            Blogs
+          </NavLink>
+          <NavLink
+            to="/education"
+            className={({ isActive }) =>
+              isActive
+                ? "text-xl block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-600 md:p-0 md:dark:text-blue-500"
+                : "text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            }
           >
             Education
-          </a>
+          </NavLink>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -69,25 +81,36 @@ const NavbarComponents = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden mt-2 flex flex-col items-center bg-gray-800 rounded-lg p-4 space-y-3 transition-all duration-300 ease-in-out">
-          <a
-            href="#"
-            className="text-xl block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500"
-            aria-current="page"
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-xl block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500"
+                : "text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            }
           >
             Home
-          </a>
-          <a
-            href="#"
-            className="text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "text-xl block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500"
+                : "text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            }
           >
             About
-          </a>
-          <a
-            href="#"
-            className="text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          </NavLink>
+          <NavLink
+            to="/education"
+            className={({ isActive }) =>
+              isActive
+                ? "text-xl block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 md:dark:text-blue-500"
+                : "text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            }
           >
             Education
-          </a>
+          </NavLink>
         </div>
       )}
     </Navbar>

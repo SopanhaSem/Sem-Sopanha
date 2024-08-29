@@ -26,11 +26,11 @@ const WorkSection = () => {
         data-aos-delay="400"
       >
         <div
-          className="portfolio-item bg-gray-900 p-6 rounded-lg shadow-lg"
+          className="portfolio-item bg-gray-900 p-4 sm:p-6 rounded-lg shadow-lg max-w-sm md:max-w-lg mx-auto md:m-12 "
           data-aos="fade-right"
         >
           <div className="portfolio-info text-left mb-4">
-            <h3 className="text-2xl font-bold text-blue-400">
+            <h3 className="text-xl sm:text-2xl font-bold text-blue-400">
               Web<span className="text-gray-200">Internship</span>
             </h3>
             <p className="text-gray-400">Using React Framework</p>
@@ -39,18 +39,19 @@ const WorkSection = () => {
             <img
               src="https://i.pinimg.com/736x/da/1d/4a/da1d4a5f37d9e18fae43a52c45cb7fda.jpg"
               alt="my office"
-              className="max-w-lg rounded-lg border border-blue-500"
+              className="w-full rounded-lg border border-blue-500"
             />
           </div>
           <div className="portfolio-tech text-left">
-            <h4 className="text-lg font-bold text-gray-200">
+            <h4 className="text-base sm:text-lg font-bold text-gray-200">
               DESIGN POS SYSTEM
             </h4>
-            <p className="text-gray-400">
+            <p className="text-gray-400 text-sm sm:text-base">
               HTML &nbsp;&nbsp;&nbsp; CSS &nbsp;&nbsp;&nbsp; JAVASCRIPT
             </p>
           </div>
         </div>
+
         <div data-aos="fade-left">
           <p className="text-gray-300 max-w-3xl mx-auto text-xl">
             During my internship, I gained hands-on experience in web

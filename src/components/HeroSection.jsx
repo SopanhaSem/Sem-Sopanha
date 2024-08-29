@@ -22,23 +22,23 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative text-gray-300 flex flex-col md:flex-row items-center justify-between p-8 md:p-32 rounded-lg w-full mx-auto h-auto md:h-1/2 z-20">
+    <section className="container relative text-gray-300 flex flex-col md:flex-row items-center justify-between p-8 md:p-10 rounded-lg w-full mx-auto h-auto md:h-[800px] z-20">
       <div className="flex-1 text-start" data-aos="fade-right">
         <h2 className="text-2xl md:text-4xl text-gray-100 mb-3 md:mb-5">
           Hello, I'm Sopanha,
         </h2>
-        <h2 className="text-5xl md:text-8xl font-bold text-white">
+        <h2 className="text-5xl md:text-6xl font-bold text-white">
           Full stack
         </h2>
-        <h1 className="text-5xl md:text-8xl font-bold text-white mb-3 md:mb-5">
+        <h1 className="text-5xl md:text-6xl font-bold text-white mb-3 md:mb-5">
           <TypeAnimation
             sequence={[
-              "Web Developer", // Text to display
-              1000, // Duration of text display in ms
-              "App Developer", // Text to display
-              1000, // Duration of text display in ms
-              "Backend Developer", // Text to display
-              1000, // Duration of text display in ms
+              "Web Developer", 
+              1000, 
+              "App Developer", 
+              1000, 
+              "Backend Developer", 
+              1000, 
             ]}
             wrapper="span"
             cursor={true}
@@ -61,8 +61,6 @@ const HeroSection = () => {
           className="w-11/12 h-auto  md:max-w-screen-xl rounded-lg"
         />
       </div>
-
-      {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <div className="relative">
