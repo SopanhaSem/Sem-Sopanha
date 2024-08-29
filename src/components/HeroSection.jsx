@@ -24,21 +24,21 @@ const HeroSection = () => {
   return (
     <section className="container relative text-gray-300 flex flex-col md:flex-row items-center justify-between p-8 md:p-10 rounded-lg w-full mx-auto h-auto md:h-[800px] z-20">
       <div className="flex-1 text-start" data-aos="fade-right">
-        <h2 className="text-2xl md:text-4xl text-gray-100 mb-3 md:mb-5">
+        <h2 className="text-lg md:text-4xl text-gray-100 mb-3 md:mb-5">
           Hello, I'm Sopanha,
         </h2>
-        <h2 className="text-5xl md:text-6xl font-bold text-white">
+        <h2 className="text-[32px] md:text-6xl font-bold text-white">
           Full stack
         </h2>
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-3 md:mb-5">
+        <h1 className="text-[32px] md:text-6xl font-bold text-white mb-3 md:mb-5">
           <TypeAnimation
             sequence={[
-              "Web Developer", 
-              1000, 
-              "App Developer", 
-              1000, 
-              "Backend Developer", 
-              1000, 
+              "Web Developer",
+              1000,
+              "App Developer",
+              1000,
+              "Backend Developer",
+              1000,
             ]}
             wrapper="span"
             cursor={true}
