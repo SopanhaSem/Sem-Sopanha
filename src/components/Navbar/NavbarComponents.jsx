@@ -2,7 +2,7 @@ import { Navbar } from "flowbite-react";
 import React, { useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
-
+import logoImage from "/src/assets/background/SemSopanha-8-30-2024.gif";
 const NavbarComponents = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,11 +19,7 @@ const NavbarComponents = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-900 text-white">
-              <img
-                src="src\assets\background\SemSopanha-8-30-2024.gif"
-                alt="logo"
-                className="w-32 object-contain"
-              />
+              <img src={logoImage} alt="logo" className="w-32 object-contain" />
             </span>
           </a>
 

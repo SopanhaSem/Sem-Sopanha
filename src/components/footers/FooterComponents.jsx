@@ -5,7 +5,6 @@ const FooterComponents = () => {
   return (
     <footer className="w-full bg-primary text-white p-4">
       <div className="flex items-center justify-between mx-auto max-w-screen-xl">
-        {/* Left Side: Your Name */}
         <span className="text-4xl font-semibold">
           <img src={logoImage} alt="logo" className="w-32 object-contain" />
         </span>
