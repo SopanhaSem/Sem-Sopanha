@@ -2,32 +2,41 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+// Static array of blog data
 const blogs = [
   {
     id: 1,
-    title: "My Freshman at University",
+    title: "My Freshman Year at University",
     image:
       "https://i.pinimg.com/736x/71/4b/df/714bdf978d5ba92ab2f8b92ac01be892.jpg",
     excerpt:
-      "Learn about computer fundamental to understand and explore more about computer components.",
+      "Learn about computer fundamentals to understand and explore more about computer components.",
     date: "August 28, 2024",
   },
   {
     id: 2,
-    title: "My Sophomore at University",
+    title: "My Sophomore Year at University",
     image:
       "https://i.pinimg.com/736x/6e/1c/2f/6e1c2fc36350fbbc3af973604e15d04d.jpg",
     excerpt:
-      "A deep dive into the differences between Front-End and Backend-End, and when to use each.",
+      "A deep dive into the differences between Front-End and Back-End development, and when to use each.",
     date: "August 25, 2024",
   },
   {
     id: 3,
-    title: "My Seniors at University",
+    title: "My Senior Year at University",
     image:
       "https://i.pinimg.com/736x/2e/a6/21/2ea62104aa00307afa6174e9624144f0.jpg",
     excerpt:
-      "Get started with UX/UI concepts and learn how to improve your code.",
+      "Get started with UX/UI concepts and learn how to improve your design and coding skills.",
+    date: "August 20, 2024",
+  },
+  {
+    id: 4,
+    title: "My CSTAD Foundation Course",
+    image:
+      "https://i.pinimg.com/736x/8e/09/91/8e0991f86be92bfa58aff359bf4741b9.jpg",
+    excerpt: "CSTAD was giving me the opportunity to expore more about IT.",
     date: "August 20, 2024",
   },
 ];

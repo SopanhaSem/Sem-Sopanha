@@ -19,7 +19,11 @@ const NavbarComponents = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-900 text-white">
-              SemSopanha
+              <img
+                src="src\assets\background\SemSopanha-8-30-2024.gif"
+                alt="logo"
+                className="w-32 object-contain"
+              />
             </span>
           </a>
 
@@ -104,7 +108,7 @@ const NavbarComponents = () => {
                 : "text-xl block py-2 px-3 text-white rounded hover:bg-gray-100 hover:text-black"
             }
           >
-            About
+            Blogs
           </NavLink>
           <NavLink
             to="/education"

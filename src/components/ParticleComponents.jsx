@@ -11,7 +11,7 @@ const ParticlesComponent = (props) => {
     })
       .then(() => {
         setInit(false);
-        console.log("Particles initialized");
+        // console.log("Particles initialized");
       })
       .catch((error) => {
         console.error("Error initializing particles:", error);

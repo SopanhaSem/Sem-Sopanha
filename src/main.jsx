@@ -4,11 +4,11 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainComponents from "./components/MainComponents.jsx";
-import About from "./pages/About.jsx";
 import Education from "./pages/Education.jsx";
 import Home from "./pages/Home.jsx";
 import BlogSection from "./components/BlogSection.jsx";
 import BlogsDetail from "./components/BlogsDetail.jsx";
+import LikeSection from "./pages/LikeSectioin.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/education",
         element: <Education />,
+      },
+      {
+        path: "/favorite",
+        element: <LikeSection />,
       },
     ],
   },

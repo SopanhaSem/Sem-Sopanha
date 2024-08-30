@@ -31,6 +31,14 @@ const blogDetails = [
       "Get started with UX/UI concepts and learn how to improve your code. This blog will discuss the principles of user experience and user interface design, including best practices and common pitfalls.",
     date: "August 20, 2024",
   },
+  {
+    id: 4,
+    title: "My CSTAD Foundation Course",
+    image:
+      "https://i.pinimg.com/736x/8e/09/91/8e0991f86be92bfa58aff359bf4741b9.jpg",
+    content: "CSTAD was giving me the opportunity to expore more about IT.",
+    date: "August 20, 2024",
+  },
 ];
 
 const BlogsDetail = () => {
@@ -40,7 +48,7 @@ const BlogsDetail = () => {
   if (!blog) return <p className="text-center text-red-500">Blog not found!</p>;
 
   return (
-    <section className="py-16" data-aos="fade-left">
+    <section className="py-16   " data-aos="fade-left">
       <div className="container mx-auto px-4">
         <div className="flex items-center mb-8">
           <Link
@@ -48,16 +56,15 @@ const BlogsDetail = () => {
             className="text-white hover:text-blue-800 flex items-center"
           >
             <HiOutlineArrowLeft className="text-2xl mr-2" />
-            <span className="font-semibold">Back to Blogs</span>
           </Link>
         </div>
 
         {/* Blog Content */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="flex md:flex-row flex-col bg-white rounded-lg shadow-lg overflow-hidden">
           <img
             src={blog.image}
             alt={blog.title}
-            className="w-full h-svh object-contain p-5 rounded-2xl"
+            className="h-96 object-contain m-10 shadow-lg p-12"
           />
           <div className="p-6">
             <h2 className="text-3xl font-bold mb-4">{blog.title}</h2>
